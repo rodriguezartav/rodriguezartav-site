@@ -1,0 +1,74 @@
+---
+layout: default
+title: 'Blog'
+---
+
+
+<div id="insideContainer" class="container">
+  <div class="row hide-on-phones">
+    <a href="index.php" class="back two columns hide-on-phones">&larr; Home</a>
+  </div>
+  
+  <div class="row">
+    <div class="twelve columns">
+    	<nav class="on-page hide-on-phones">
+    		<ul>
+    		
+    		</ul>
+    	</nav>
+      <h1 class="light-weight"><%= @document.title %></h1>
+    </div>
+  </div>
+
+<div class="row blog">
+	<div class="two columns post_links">
+    <h4>Posts</h4>
+    	<% for document in @documents: %>
+				<% if document.url.indexOf('/blog/posts') == 0: %>
+				  <div class="post_link">
+					  <a href="<%= document.url %>"><%= document.post_title %></a>
+					  <p><%= document.description %></p>
+					</div>
+				<% end %>
+			<% end %>
+  </div>
+    
+  <div class="seven columns post_list">
+    <h4><%= @document.post_title %></h4>
+    <%- @content %>
+  </div>
+  
+  	<div class="three columns">
+  
+     <div>
+        <h4>Case Studies</h4>
+        <ul class="block-grid three-up">
+
+          <li><a href="/cases/social" class="">Social & Mobile</a></li>
+
+
+          <li><a href="/cases/startup" class="">Start Up</a></li>
+
+
+          <li><a href="/cases/opensource" class="">Open Source</a></li>
+       <ul>
+      </div>
+  
+  	
+  		<div class="panel hide-on-phones">
+  			<h4>Follow Me</h4>
+  			<p>I post regularly to this blog and twitter.</p>
+  			<p>
+  				<a href="../files/foundation-download-2.1.4.zip" class="nice radius blue button mobile src-download">Register</a>
+  			</p>
+  		</div>
+
+     
+
+  		
+  	</div>
+  </div>
+  
+</div>
+
+</div>

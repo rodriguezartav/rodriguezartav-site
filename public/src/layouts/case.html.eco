@@ -1,0 +1,73 @@
+---
+layout: default
+---
+
+<div class="container case">
+
+	<div class="row">
+		<div class="twelve columns">
+			<div class="foundation-header">
+				<h1><a href="index.php"><%= @document.title %></a></h1>
+				<h4 class="subheader"><%= @document.sub_title %></h4>
+			</div>
+		</div>
+	</div>
+
+  <div class="row">
+
+  <%- @content %>
+
+  
+  	<div class="four columns">
+  <div>
+    <h4>Other Cases</h4>
+    <ul class="block-grid three-up">
+
+      <li><a href="/cases/social" class="">Social & Mobile</a></li>
+
+
+      <li><a href="/cases/startup" class="">Start Up</a></li>
+
+
+      <li><a href="/cases/opensource" class="">Open Source</a></li>
+   <ul>
+    </div>
+
+
+		<div class="panel hide-on-phones">
+    		<h4>Training and Mentoring</h4>
+  			<p>Enterprise Software must be developed in-house continuously. I provide training and mentoring, from framework adoption to the most advanced scenarios.</p>
+  			
+  			<h4>Enterprise Consulting</h4>
+  			<p>I enjoy working along companies designing their Enterprise Systems;</p>
+  			
+  				<a href="/contact.html" class="nice radius blue button mobile src-download">Contact Me</a>
+        
+    </div>
+
+  
+
+  		<!-- ==========================
+  		ZURBjobs
+  		=============================== -->
+		
+  		<div class="jobs hide-on-phones">
+  			<h4><strong>How to build this:<br/></strong> posts for developers</h4>
+  		  	<% for document in @documents: %>
+    				<% if document.url.indexOf('/blog/posts') == 0: %>
+    				  <div class="post_link">
+    					  <a href="<%= document.url %>"><%= document.post_title %></a>
+    					  <p><%= document.description %></p>
+    					</div>
+    				<% end %>
+    			<% end %>
+  		</div>
+		
+  	</div>
+  </div>
+</div>
+
+
+
+
+</div>

@@ -1,0 +1,16 @@
+---
+layout: 'case'
+---
+
+	<div class="two columns">
+		<dl class="nice tabs vertical hide-on-phones">
+  		<% for document in @documents: %>
+      	<% if document.url.indexOf('/cases/enterprise/') == 0: %>
+          <dd><a href="<%= document.url %>" class="<%= 'active'  if @document.url is document.url %>"> <%= document.link_title %></a></dd>
+        <% end %>	
+      <% end %>
+		</dl>
+  </div>
+  
+  <%- @content %>
+  

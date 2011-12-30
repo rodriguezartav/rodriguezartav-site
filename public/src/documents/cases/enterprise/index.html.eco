@@ -1,0 +1,70 @@
+---
+title: 'Enterprise Systems'
+sub_title: "Using the latest open source technology to solve complex business scenarios."
+link_title: "Getting Started"
+layout: 'enterprise'
+tags: ['greeting','french']
+---
+
+	<div class="six columns">
+		<h3>Rodco and the Sixth Framework</h3>
+		<h4 class="subheader">A success story of a Market leader using "Sixth"</h4>
+		
+		<hr />
+		
+		<h4>What's in Sixth?</h4>
+		<p>A framework for creating robust, maintainable business macro-applications hosted entirely on the cloud with affordable development and operating costs.</p>
+		<div class="row">
+			<div class="six columns">
+				<ul>
+					<li><h5>Salesforce.com (Force.com)</h5>Database , Security and Administrative Interfaces like Reporting and Listings. A business designed & programable platform used for creating process , workflows and react to changes in data. </li>
+					<li><h5>Sinatra / Rails</h5>Standard based and robust Integration Hub; is the center of the system that allows mobile, tablet, offline and web applications to send and receive data with force.com.</li>
+					<li><h5>Node-Js</h5>  The latest invention in software, a powerful server that is able to handle millions of simultaneous requests from intranet and customer facings apps. Is the power-horse behind beautiful and engaging web and mobile applications. </li>
+				</ul>
+				</div>
+				
+				<div class="six columns">
+				<ul>
+					<li><h5>Foundation</h5>A design framework for creating slick designs, with a hidden power. It helps build adaptable designs for desktop, tablets and mobiles phones; Increases production of application in ~400%.</li>
+					<li><h5>SpineJs</h5>Makes applications responsive, entertaining and fast. A front-end (client side) framework for creating robust and maintainable apps in a fraction of the time.  </li>
+					<li><h5>Sixth</h5>The glue that joins them all. Sixth is a set of patterns and procedures that makes each of the parts of a modern cloud hosted enterprise system perform as with the accuracy of the Space Shuttle. Standards based, 100% Open Source. </li>
+				</ul>
+			</div>
+		</div>
+		
+		<hr />
+		
+		<h4>Business Components in Detail</h4>
+		
+		<h5>Salesforce.com<small>Force.com / Database.com</small></h5>
+		<p>Salesforce.com Platform contains </p>
+		
+		<h5>Offline Invoicing Application<small>December 9, 2011</small></h5>
+		<p>We've fixed a number of inheritance issues with dropdown nav, and turned off the JS hooks for that element while we resolve some iOS / Android inconsistencies. Dropdowns will work as expected based on their CSS, but have no special mobile functionality at the moment.</p>
+		
+		<h5>Google Chrome Notification Extension<small>December 7, 2011</small></h5>
+		<p>Added nav bar styles to ui.css including arbitrary-content dropdowns. Added basic support for microformats. Modified how the grid handles phone sizes through margin and padding, and in the process fixed a bug which broke the phone grid when used outside another column.</p>
+
+  	<h5>Billable and Accounting<small>December 7, 2011</small></h5>
+		<p>Added nav bar styles to ui.css including arbitrary-content dropdowns. Added basic support for microformats. Modified how the grid handles phone sizes through margin and padding, and in the process fixed a bug which broke the phone grid when used outside another column.</p>
+	
+	  	<h5>Invoice Printing Station<small>December 7, 2011</small></h5>
+  		<p>Added nav bar styles to ui.css including arbitrary-content dropdowns. Added basic support for microformats. Modified how the grid handles phone sizes through margin and padding, and in the process fixed a bug which broke the phone grid when used outside another column.</p>
+  
+	
+		<hr />
+		
+		<h4>Cloud Hosting</h4>
+		<p>This term is actually a contradiction, since in the Cloud there is no hosting. You purchase "pipeline" instead of space, pay for what you use.</p>
+		
+		<p>The main system and database is a service provided by Salesforce.com, which also includes the Administrative Interface like listings, reports, dashboards , etc</p>
+
+		<p>Each web and mobile application along with API Integration Hubs is hosted on Heroku, a Salesforce.com company that revolutionized the Open Source Community by providing an extremely efficient , scalable and affordable platform to deploy applications in seconds. </p>
+    
+    
+		<p>The code , organized , tested and object oriented is stored in separated repositories; Also in the cloud allowing distributed teams to work on the same projects with out conflicts with 100% reliability.</p>
+
+    
+		<hr />
+		
+	</div>

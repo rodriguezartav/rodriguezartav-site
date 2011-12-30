@@ -1,0 +1,11 @@
+---
+title: "Roberto Rodriguez's - Featured Posts"
+layout: 'blog'
+---
+
+<% for document in @documents: %>
+	<% if document.url.indexOf('/blog/posts/front') == 0: %>
+    <h4><%= document.post_title %></h4>
+	  <%- document.content %>
+  <% end %>	
+<% end %>

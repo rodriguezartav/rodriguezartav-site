@@ -1,0 +1,11 @@
+---
+title: "Roberto Rodriguez's Blog"
+layout: 'blog'
+description: 'A static blog on NodeJS'
+post_title: "How I build this"
+---
+  <div class="frame">
+    this is the body of post two
+  </div>  
+
+
