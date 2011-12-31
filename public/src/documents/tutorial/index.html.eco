@@ -1,11 +1,12 @@
 ---
 title: "Open Source Tutorials - Featured Posts"
-layout: 'blog'
+layout: 'tutorial'
 ---
 <% docs =  @documents.reverse() %>
 
 <% for document in docs: %>
-	<% if document.url.indexOf('/blog/posts/front') == 0: %>
+<% url = document.url %>
+	<% if url.indexOf('/tutorial/posts/front') == 0 : %>
     <h4><%= document.post_title %></h4>
 	  <%- document.content %>
   <% end %>	

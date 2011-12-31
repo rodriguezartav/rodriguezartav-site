@@ -88,7 +88,7 @@
             
             </ul>
         </nav>
-      <h1 class="light-weight">Open Source Tutorials - Featured Posts</h1>
+      <h1 class="light-weight">Open Source Tutorials</h1>
     </div>
   </div>
 
@@ -97,14 +97,19 @@
     <h4>Posts</h4>
         
                 
+            
+                
                   <div class="post_link">
-                      <a href="/blog/posts/front/sixth_framework.html">Announcing Sixth Framework</a>
-                      <p>Macro-Application Development</p>
+                      <a href="/tutorial/posts/front/foundation.html">Responsive Design with Foundation</a>
+                      <p>Css framework that adapts to desktop,tablet and mobile screens.</p>
                     </div>
                 
             
                 
-            
+                  <div class="post_link">
+                      <a href="/tutorial/posts/front/static_blog.html">Static Blog in NodeJS</a>
+                      <p>Using Docpad to pre-compile Eco templates</p>
+                    </div>
                 
             
                 
@@ -136,52 +141,66 @@
   </div>
     
   <div class="seven columns post_list">
-    <h4></h4>
+    <h4>Responsive Design with Foundation</h4>
     
-
-
-
-    
-    <h4>Announcing Sixth Framework</h4>
-      
   <div class="frame">
-    <h5>Background</h5>
+  
+  <img src="/images/foundation_mobil.png"/>
+  
+  
+    <h5>Motivation</h5>
+    <p>We've all worked with Grid 960; at least thats how I got introduced into css frameworks. I am one that liked the idea since the get go and have evolved with it.</p>
+
+    <p>On the way I discovered Sass and liked the indentation and variables, then moved to compass so I could easily write css3. When started playing with NodeJS I moved to LESS; and these days Stylus is king of css.</p>
+
+    <p>CSS is great and is , in itself, a great framework all together. Normally us designers have our own base style sheet and reusable libraries; I find my self a good designer and know css like the palm of my hand, however I am sure there are far better designers than myself out there.</p>
+
+
+    <p>The search for better css code and more importantly a solution to designing for different screen sizes made me understand that "Responsive Design was the way to go"</p>
+
+    <img src="/images/foundation.png"/>
+
+    <h5>Zurb Foundation</h5>
+    <p>Zurb is one of those shops that excel at what they do, they are one of the best design agencies in the world; So their work is interesting to follow, especially when they create a framework for responsive design and Open Source it.</p>
+
+    <p>Introducing <a href="http://foundation.zurb.com/">Zurb Foundation</a>, an amazing css3/html5 framework for creating responsive designs that adapt to screen size by showing, hiding and modifying elements css according to current screen size.</p>
+
+    <p>Zurb Foundation also feature what other frameworks does, like buttons, alerts, tabs, grid and such. Its beautiful, but what I like the most is the intelligent and simple way they cater for mobil design; making it effortless to create an app that looks perfect on a 1200px screen and on a 320px as well.</p>
     
+    
+    <h5>How to use it - Part I</h5>
+    <p>As with most open source frameworks, authors try to make it easy for new comers to get started with their library. Foundation is not the exception; <a href="http://foundation.zurb.com/files/foundation-download-2.1.4.zip">You can just download a base site</a>. However sometimes the real life scenarios where we deploy such libraries is different from what authors imagined.</p>
+    
+    <p>I hardly us Rails for Front-End components, however <a href="https://github.com/zurb/foundation-rails">Rails-Foundation</a> makes it as simple as it can be to integrate Foundation into a Rails App. For me, this is not fully beneficial yet. </p>
+    
+    <p>The problem with doing things custom for a project is that you can not take advantage of the auto-pilots in most modern frameworks like rails; However it does give you the control and separation of concerns necessary to create innovative and maintainable projects.</p>
+    
+    <h5>How to use it - Part II</h5>
+    <p><a href="#">First I ported Zurb Foundation into Stylus</a> and made sure all of its libraries work properly; I had to get rid of a IE Gradient Filter since it was not compiling.</p>
+    
+    <p>Then I managed to integrate Zurb Foundation into SpineJS for creating Async UI's , which also works as well with <a href="">Docpad</a> which is how this site was created in less than 15 hours start to finish.</p>
+    
+    <p>All you have to do is drop the Foundation port to stylus into the css folder and import the required Foundation Plugins in the index.styl file. Then you can start creating amazing layouts with such simplicity that you will be amazed at what happends when you shrink the browser screen or preview on a tablet.</p>
+    <div class="row">
+    <img align="left" style="margin-right: 8px" src="/images/foundation_index.png"/>
+    
+    <img align="left" src="/images/foundation_css.png"/>
+    </div>
+    <h5>Tips</h5>
+    <p>The best way to learn is by looking at Zurbs work, especially the marketing site, start by cloning this work which is why they share it on their repository.</p>
 
-   </div>  
+    <p>Plan you design ahead, when working with Zurb Foundation is a little different than Sass; Not as many mixings necessary, since layout is controller by markup. Example class="columns six" will take care of position and sizing.</p>
 
-      
+    <p>Follow this sheet sheet of classes so that its easier to code using your favorite templating engine. </p>
 
-        
+    <h5>Links</h5>
+    <a href="">Zurb Foundation Docs</a>
+    <a href="">Zurb Foundation Github</a>
+    <a href="">Zurb Foundation Port to Stylus</a>
+    <a href="">Zurb Foundation + Spine Boilerplate ( nodeJS )</a>
+    <a href="">Zurb Foundation + Spine + Docpad Template ( nodeJS )</a>
 
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
+  </div>
   </div>
   
       <div class="three columns">

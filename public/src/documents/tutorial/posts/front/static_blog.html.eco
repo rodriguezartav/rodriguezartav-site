@@ -1,4 +1,9 @@
-
+---
+title: "Open Source Tutorials"
+layout: 'tutorial'
+description: 'Using Docpad to pre-compile Eco templates'
+post_title: "Static Blog in NodeJS"
+---
   <div class="frame">
     <h5>Background</h5>
     <p>First we used to build html web sites with Adobe's Dreamweaver, using templates to be follow DRY principles. Next we moved toward CMS like Drupal , Wordpress.</p>
@@ -68,7 +73,7 @@
     <p>The web site is on http://rodriguezartav.herokuapp.com</p>
     
     
-      </p>
+  	</p>
 
 
    </div>  

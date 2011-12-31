@@ -1,0 +1,282 @@
+<!DOCTYPE html>    
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="description" content="Foundation is an easy to use, powerful, and flexible framework for building rapid prototypes and production code on any kind of device." />
+
+    <link rel="stylesheet" href="/fonts.css" type="text/css" charset="utf-8">
+    
+    <link rel="stylesheet" href="/application.css" type="text/css" charset="utf-8">
+  
+    
+    <title>Jungle Dynamics || Web Multiplier</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/ico" href="favicon.ico">
+  
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="src/stylesheets/ie.css">
+    <![endif]-->
+    
+    <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  <script src="/application.js" type="text/javascript" charset="utf-8"></script>
+   <script type="text/javascript" charset="utf-8">
+     var jQuery  = require("jqueryify");
+     var exports = this;
+     jQuery(function(){
+       var App = require("index");
+       exports.app = new App({el: $("body")});      
+     });
+   </script>
+
+</head>
+
+<body>
+
+      
+  <!-- ZURBar -->
+  <div id="zurBar" class="container">
+    <div class="row">
+      <div class="four columns">
+        <h1><a href="/">@jungledynamics</a></h1>
+      </div>
+      <div class="eight columns hide-on-phones">
+          <strong class="right">
+              <a href="/blog">Blog</a>
+              <a href="/cases/enterprise">Case Studies</a>
+              <a href="/tutorial">Tutorial</a>
+              <a href="http://github.com/rodriguezartav">Github</a>
+              <a href="/contact.html" class="small blue nice button src-download">Contact</a>
+              
+          </strong>
+      </div>
+      <!--
+<div class="two columns">
+        <h2 class="right"><a href="http://www.zurb.com">by ZURB</a></h2>
+      </div>
+-->
+    </div>
+  </div>
+  <!-- /ZURBar -->
+  
+
+  
+    
+
+
+<div id="insideContainer" class="container">
+  <div class="row hide-on-phones">
+    <a href="index.php" class="back two columns hide-on-phones">&larr; Home</a>
+  </div>
+  
+  <div class="row">
+    <div class="twelve columns">
+        <nav class="on-page hide-on-phones">
+            <ul>
+            
+            </ul>
+        </nav>
+      <h1 class="light-weight">Open Source Tutorials</h1>
+    </div>
+  </div>
+
+<div class="row blog">
+    <div class="two columns post_links">
+    <h4>Posts</h4>
+        
+                
+            
+                
+                  <div class="post_link">
+                      <a href="/tutorial/posts/front/foundation.html">Responsive Design with Foundation</a>
+                      <p>Css framework that adapts to desktop,tablet and mobile screens.</p>
+                    </div>
+                
+            
+                
+                  <div class="post_link">
+                      <a href="/tutorial/posts/front/static_blog.html">Static Blog in NodeJS</a>
+                      <p>Using Docpad to pre-compile Eco templates</p>
+                    </div>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+  </div>
+    
+  <div class="seven columns post_list">
+    <h4>Static Blog in NodeJS</h4>
+    
+  <div class="frame">
+    <h5>Background</h5>
+    <p>First we used to build html web sites with Adobe's Dreamweaver, using templates to be follow DRY principles. Next we moved toward CMS like Drupal , Wordpress.</p>
+    <p>We got accostumbed to working with dynamic database driven sites, however most of the time those sites remain static for a long period of time. The reason we kept using such patters for blogs and sites was because of how complicated it used to be to edit html, ftp changes , etc.</p>
+    
+    
+    <h5>Trend</h5>
+    <p>With Rails and Sinatra many of us started using templates and libraries like Jekill to generate database-free static web sites that we could quickly create and update in our favorite template engine/language.</p>
+    
+    <p>Still Rails seemed like an overkill for my personal web site, consisting of a couple of pages, I also wanted to try and build a simple static blog with NodeJS</p>
+
+    <img src="images/docpad_folder.png"/>
+
+  <h5>Docpad</h5>
+  <p>I was thinking that it was far better to compile the html for my static site locally, rather than using a templating engine like Jade. Even thou it was important to avoid copy&pasting my headers and footers all over the place; It was worst ( for me ) to start tweeking my NodeJS server that I got set up for my Async UI's.</p>
+  
+   <p>So I started the usual Google research dance , looking specifically for a Jekyll version for NodeJS. Found Docpad, which was exactly what I was looking for and it turned out to have pretty powerful features that I didn't foresee</p>
+   
+   <p>As an example, Docpad has a way to do in-context Editing, but in may case a way to read meta data from files in folder was much more interesting so that I could keep my blog posts separated and list them "dynamically".</p>
+
+   <script src="https://gist.github.com/1541668.js"> </script>
+
+  <h5>Getting Started</h5>
+    <p>The first thing is to head to <a href="https://github.com/balupton/docpad">Doc Pad @ Github</a> and install it using NPM.<p>
+    
+    <p>I think the instructions are very clear , the installation and services are almost stable.<small> ( sometimes take too long to finish )</small> So that anybody can get started right away</p>
+    
+    <p>In order to use my prefered enviroment you should install Spine App and Hem. npm install -g Spine.App Hem<p>
+  
+    <h5>A better environment</h5>
+    <p>We all have our own preferences, I work plenty with Async UI's and start all node projects with Spine App. This also sets up Stylus and such. I also migrated Foundation Framework to Stylus and made it fit perfectly with Spine.</p>
+
+    <p>Spine got Hem a development server that takes care of Stylus and Coffeescript, and Docpad has its own server however it doesn't have Common JS Modules or the css concatenation of a power-horse like Spine and Hem.</p>
+
+    <p>So I use both, inside of Spine public Directory ( NodeJS Express Static Server  ) I created the basic Docpad app , then created a terminal script to Compile the Docpad part and copied from the Docpad Output directoru (/public/out) to the public directory(/public) which takes care of all the URL usage in Docpad</p>
+
+    <h5>Step by Step</h5>
+    <p>Create new Spine App: <q>spine app blog</q> which will create a folder named blog and inside it another one named public. The rest is out of scope.</p>
+    <p>Next go ahead scaffolding Docpad simplest App into the /public folder. <q>git clone git://github.com/balupton/canvas.docpad.git</q> </p>
+    
+    <p>Inside the canvas.docpad folder , copy the /src and /out folders into the /public folder.Erase /public/canvas.docpad</p>
+
+    <p>Docpad compiles the content of /src into /out. I am sure there are far better ways of making docpad deploy to the /public folder or using Guard or Watch to move  /public/out/* into /public ; however for me the simplest and quicker way turn out to be a script</p>
+    <script src="https://gist.github.com/1541753.js"> </script>
+    
+    <p>In the project root type hem server, and every time you make a change to anything inside the public/src run the script. Docpad also comes with an automatic compiler, but is far to slow for my taste; I run faster by cmd-tab and two terminal windows.</p>
+    
+
+    <h5>How the Case Studies and Blog work?</h5>
+    <p>HA! this is the tricky part and what I liked the most. So using the snippet I provided back there, you can list all files in a path. ej: inside the for loop check out >>>> if document.url.indexOf('/blog/posts') == 0 </p>
+    
+    <p>This way I can also use my own meta data for example document.sub_title or the Docpad's API like title, content, url, etc</p>
+
+    <p>In this site I use two flavors, the Case Studies and the Blog. Case studies are straight-forwared. A folder named Enterprise with several files including and index.html.eco; I also use a enterprise layout that does the trick for all files and sets them on the side bar as links. That's pretty much it, I did it with 4 case studies and ended up with 4 micro-sites very quickly.</p>
+
+    <p>The blog section is a litter more trickier, because it needs an index page to show the features posts. In order for this to work given the Layout Inheritance I made so that each post inside /blog/posts delegates its title to the blog layout, but the index (featured posts  )  does show each title and content for all files inside the path /blog/posts/front.</p>
+
+    <p>Now its so simple to right posts and control where they appear, just like I am doing with this posts.</p>
+    
+    <h5>Deploy</h5>
+    <p>Well first commit the code to Git: <a href="https://github.com/rodriguezartav/rodriguezartav-site">Web Site Code</a></p>
+    
+    <p>Then do a heroku create rodriguezartav --stack cedar </p>
+    
+    <p>And git push heroku origin</p>
+    
+    <p>The web site is on http://rodriguezartav.herokuapp.com</p>
+    
+    
+      </p>
+
+
+   </div>  
+
+  </div>
+  
+      <div class="three columns">
+  
+    
+          <div class="panel hide-on-phones">
+              <h4>Follow Me</h4>
+              <p>I post regularly to this blog and twitter.</p>
+              <p>
+                  <a href="../files/foundation-download-2.1.4.zip" class="nice radius blue button mobile src-download">Register</a>
+              </p>
+          </div>
+
+     
+
+          
+      </div>
+  </div>
+  
+</div>
+
+</div>
+  
+  
+  <!-- Das Footer -->
+  <footer class="row footer">
+    <section class="three columns">
+      <h6><strong>About Roberto Rodriguez</strong></h6>
+      <p>Born 1981, studied Aerospace Engineering in PennState University. Dropped out at age 20 to create D-Net, a software consulting firm. Self Educated Developer and Designer. </p>
+    </section>
+
+    <section class="five columns">
+      <h6><strong>In what areas of Software do I work.</strong></h6>
+      <p>I am in the bleeding edge of FrontEndUI development with Java/Coffee-script. 
+      <br/>Backend with NodeJS, Sinatra and Rails and in the business/data layer with Force.com Database.com, MongoDB and Redis.       <br/>Improving exponentially on Responsive UI design with HTML5 , CSS3(eco,haml,stylus,less,etc) </p>
+    </section>
+
+    <section class="four columns">
+      <h6><strong>What Skills do I have</strong></h6>
+      <p>Cloud Consultant(Business Skills) , Lead Developer(Leadership) , World Traveler(People Skills) , Soccer Player () , Self Educated(Discpline), Test-Driven Development(Scrum), Open Source Developer (GIT)</p>
+      <a class="button nice rounded" href="/contact.html">Contact Me</a>
+
+      <ul class="block-grid three-up">
+          <li>
+        <!-- Place this tag where you want the +1 button to render -->
+          <g:plusone size="medium"></g:plusone>
+
+          <!-- Place this render call where appropriate -->
+      </li>
+      <li>
+
+
+      </li>
+      <li>
+
+      </li>
+  </div>
+    </section>
+  </footer>
+  <!-- /Das Footer -->
+  
+</body>
+</html>
