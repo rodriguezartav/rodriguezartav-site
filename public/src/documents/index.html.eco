@@ -28,23 +28,23 @@ layout: 'header'
 	  		<h4>Case Studies</h4>
 	  		<div class="row">
 	  			<div class="three columns">
-	  				<a href="#"><img src="images/img-swizzle.jpg" alt="Get Swizzle"></a>
+	  				<a href="#"><img src="images/rodco.png" alt="Get Swizzle"></a>
 	  				<h4><a href="/cases/enterprise">Next Gen ERP</a></h4>
 	  				<h6>Force.com + NodeJS + Sinatra</h6>
 	  				<p>State of art ERP on Force.com with several SpineJS Asynchronous UI's for invoicing, billing and inventory management.</p><p>Google Chrome Extensions, Offline Access Apps and Mobile sites give business user constant access to realtime data.</p>
 	  			</div>
 	  			<div class="three columns">
-	  				<a href="#"><img src="images/img-soapbox.jpg" alt="ZURBsoapbox"></a>
+	  				<a href="#"><img src="images/frebbe2.png" alt="ZURBsoapbox"></a>
 	  				<h4><a href="/cases/social">Frebbe</a></h4>
 	  				<p>Taking the internet to the next curve Frebbe is a platform to share knowledge in form of 2-d presentations that better then web sites, better than presentations</p><p>Build on Rails and NodeJs with SpineJS MVC this is a great example on prototyping and experimenting with the bleeding edge of technologies, searching for the next big thing! </p>
 	  			</div>
 	  			<div class="three columns">
-	  				<a href="#"><img src="images/img-foundation.jpg" alt="Foundation Marketing Site"></a>
+	  				<a href="#"><img src="images/opensource.png" alt="Foundation Marketing Site"></a>
 	  				<h4><a href="/cases/startup">D-Net</a></h4>
 	  				<p>Social , Mobile and Smart Apps are the future, perhaps even the future of global economy. However getting from a great application idea, to a profitable business requires a leap.</p><p>D-Net is a Start-Up accelerator in Costa Rica where entrepreneurs, inverstors and the brightest engineers merge for create wonderful projects. </p>
 	  			</div>
 	  			<div class="three columns">
-	  				<a href="/cases/saimiri"><img src="images/img-zurbjobs.jpg" alt="ZURBjobs"></a>
+	  				<a href="/cases/saimiri"><img src="images/saimiri.png" alt="ZURBjobs"></a>
 	  				<h4><a href="#">Saimiri Foundation</a></h4>
 	  				<p>My wife ( Daniela - Biologist ) and I created a grassroots organization to improve the conditions of our community in a remote Rainforest in Costa Rica. So far we have created jobs, business chaining, sports activities, children groups, etc.</p><p>This our passion and our work, we build it, fund it and work on it ourselves; more a story than a case...</p>
 	  			</div>
@@ -108,13 +108,12 @@ layout: 'header'
   	  <!-- Who's Using Foundation? -->
   	  <section id="logos" class="row">
   	    <article class="twelve columns">
-  	      <h4>Sites Using Foundation</h4>
+  	      <h4>Partners & Providers</h4>
   	      <ul>
-  	        <li class="hide-on-phones"><a href="http://www.rcskids.org" target="_blank"><img src="images/logo-rcs.png" alt="Rebekah Children's Services"></a></li>
-  	        <li class="show-on-phones"><a href="http://www.rcskids.org" target="_blank"><img src="images/logo-rcs-alt.png" alt="Rebekah Children's Services"></a></li>
-  	        <li><a href="http://dynamo.dictionary.com/" target="_blank"><img src="images/logo-dynamo.png" alt="Dictionary.com Word Dynamo"></a></li>
-  	        <li><a href="http://www.reelapp.com" target="_blank"><img src="images/logo-reel.png" alt="Reel"></a></li>
-  	        <li><a href="http://www.zurb.com/soapbox" target="_blank"><img src="images/logo-soapbox.png" alt="ZURBsoapbox"></a></li>
+  	        <li><a href="http://www.rcskids.org" target="_blank"><img src="images/salesforce.jpeg" alt="Rebekah Children's Services"></a></li>
+  	        <li><a href="http://dynamo.dictionary.com/" target="_blank"><img src="images/google.jpeg" alt="Dictionary.com Word Dynamo"></a></li>
+  	        <li><a href="http://www.reelapp.com" target="_blank"><img src="images/heroku.jpeg" alt="Reel"></a></li>
+  	        <li><a href="http://www.zurb.com/soapbox" target="_blank"><img src="images/amazon.jpeg" alt="ZURBsoapbox"></a></li>
   	      </ul>
   	    </article>
   	  </section>

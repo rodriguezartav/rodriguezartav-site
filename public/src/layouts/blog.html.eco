@@ -40,21 +40,7 @@ title: 'Blog'
   
   	<div class="three columns">
   
-     <div>
-        <h4>Case Studies</h4>
-        <ul class="block-grid three-up">
-
-          <li><a href="/cases/social" class="">Social & Mobile</a></li>
-
-
-          <li><a href="/cases/startup" class="">Start Up</a></li>
-
-
-          <li><a href="/cases/opensource" class="">Open Source</a></li>
-       <ul>
-      </div>
-  
-  	
+    
   		<div class="panel hide-on-phones">
   			<h4>Follow Me</h4>
   			<p>I post regularly to this blog and twitter.</p>

@@ -2,8 +2,9 @@
 title: "Roberto Rodriguez's - Featured Posts"
 layout: 'blog'
 ---
+<% docs =  @documents.reverse() %>
 
-<% for document in @documents: %>
+<% for document in docs: %>
 	<% if document.url.indexOf('/blog/posts/front') == 0: %>
     <h4><%= document.post_title %></h4>
 	  <%- document.content %>

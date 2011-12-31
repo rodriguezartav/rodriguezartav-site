@@ -15,6 +15,7 @@ post_title: "Static Blog in NodeJS"
     
     <p>Still Rails seemed like an overkill for my personal web site, consisting of a couple of pages, I also wanted to try and build a simple static blog with NodeJS</p>
 
+    <img src="images/docpad_folder.png"/>
 
   <h5>Docpad</h5>
   <p>I was thinking that it was far better to compile the html for my static site locally, rather than using a templating engine like Jade. Even thou it was important to avoid copy&pasting my headers and footers all over the place; It was worst ( for me ) to start tweeking my NodeJS server that I got set up for my Async UI's.</p>
@@ -40,8 +41,8 @@ post_title: "Static Blog in NodeJS"
     <p>So I use both, inside of Spine public Directory ( NodeJS Express Static Server  ) I created the basic Docpad app , then created a terminal script to Compile the Docpad part and copied from the Docpad Output directoru (/public/out) to the public directory(/public) which takes care of all the URL usage in Docpad</p>
 
     <h5>Step by Step</h5>
-    <p>Create new Spine App: spine app blog ; which will create a folder named blog and inside it another one named public. The rest is out of scope.</p>
-    <p>Next go ahead scaffolding Docpad simplest App into the /public folder. git clone git://github.com/balupton/canvas.docpad.git </p>
+    <p>Create new Spine App: <q>spine app blog</q> which will create a folder named blog and inside it another one named public. The rest is out of scope.</p>
+    <p>Next go ahead scaffolding Docpad simplest App into the /public folder. <q>git clone git://github.com/balupton/canvas.docpad.git</q> </p>
     
     <p>Inside the canvas.docpad folder , copy the /src and /out folders into the /public folder.Erase /public/canvas.docpad</p>
 
@@ -52,7 +53,7 @@ post_title: "Static Blog in NodeJS"
     
 
     <h5>How the Case Studies and Blog work?</h5>
-    <p>HA! this is the tricky part and what I liked the most. So using the snippet I provided back there, you can list all files in a path. ej: if document.url.indexOf('/blog/posts') == 0 </p>
+    <p>HA! this is the tricky part and what I liked the most. So using the snippet I provided back there, you can list all files in a path. ej: inside the for loop check out >>>> if document.url.indexOf('/blog/posts') == 0 </p>
     
     <p>This way I can also use my own meta data for example document.sub_title or the Docpad's API like title, content, url, etc</p>
 
