@@ -1,5 +1,5 @@
 ---
-title: "Open Source Tutorials - Featured Posts"
+title: "Open Source Tutorials"
 layout: 'tutorial'
 ---
 <% docs =  @documents.reverse() %>

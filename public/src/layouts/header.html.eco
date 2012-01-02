@@ -12,7 +12,7 @@ layout: default
 	    <div class="twelve columns">
 	    	<nav class="on-page hide-on-phones">
 	    		<ul>
-	    			<li class="current"><a href="/cases/enterprise">Enterprise</a></li>
+	    			<li><a href="/cases/enterprise">Enterprise</a></li>
 	    			<li ><a href="/cases/social">Social & Mobile</a></li>
 	    			<li><a href="/cases/startup">Start-Up</a></li>
 	    			<li><a href="/cases/opensource">Open Source</a></li>
