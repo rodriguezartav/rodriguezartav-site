@@ -1461,6 +1461,15 @@ a:hover {
 #mainDownload:focus {
   overflow: visible;
 }
+.index_bullets {
+  margin: 0px 10px;
+  padding: 0px;
+}
+.index_bullets li {
+  color: #000;
+  margin: 0px 0px 5px 0px;
+  padding: 0px;
+}
 #insideContainer {
   z-index: 100;
 }
@@ -1491,6 +1500,12 @@ a:hover {
   height: 20px;
   margin-bottom: 30px;
 }
+.case_studies img {
+  border: 1px solid #e9e9e9;
+  height: 153px;
+  width: 100%;
+  overflow: hidden;
+}
 .footer_container {
   padding-top: 40px;
   background-color: #ededed;
@@ -1498,55 +1513,55 @@ a:hover {
   background-image: -moz-linear-gradient(top, #ededed, #fff 70%, #fff);
   background-image: linear-gradient(top, #ededed, #fff 70%, #fff);
 }
-.footer_container #updates {
+#updates {
   margin-bottom: 60px;
   border-bottom: solid 1px #e0e0e0;
   border-top: solid 1px #e0e0e0;
   border-right: solid 1px #e0e0e0;
   background: #fff;
 }
-.footer_container #updates div.two.columns {
+#updates div.two.columns {
   background-image: linear-gradient(top, #b7b7b7, #a6a6a6);
   background: -ms-linear-gradient(top, #b7b7b7 0%, #a6a6a6 100%);
   border: solid 1px #949494;
   padding: 12px 17px 15px 17px;
   width: 96px;
 }
-.footer_container #updates div.two.columns h6 {
+#updates div.two.columns h6 {
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0,0,0,0.20);
   font-weight: 600;
 }
-.footer_container #updates div.two.columns time {
+#updates div.two.columns time {
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0,0,0,0.12);
   font-size: 1.2rem;
   margin-bottom: 5px;
   display: block;
 }
-.footer_container #updates div.two.columns .button.nice {
+#updates div.two.columns .button.nice {
   color: #6f6f6f;
   font-weight: 300;
   font-size: 1.1rem;
   border: solid 1px #999;
   padding: 3px 20px 4px;
 }
-.footer_container #updates article {
+#updates article {
   background: #fff;
   border-top: none;
   border-bottom: none;
   margin-left: 0;
   padding: 12px 17px 11px 2%;
 }
-.footer_container #updates article dl {
+#updates article dl {
   margin-bottom: 4px;
 }
-.footer_container #updates article dl dt {
+#updates article dl dt {
   font-weight: 600;
   font-size: 1.4rem;
   margin-bottom: 4px;
 }
-.footer_container #updates article a {
+#updates article a {
   font-size: 1.1rem;
   font-style: italic;
   background: url("images/octocat.png?1309544325") 0 -1px no-repeat;
@@ -1554,7 +1569,7 @@ a:hover {
   position: relative;
   left: -2px;
 }
-.footer_container #updates aside {
+#updates aside {
   background: #fff;
   margin-left: 0;
   padding: 12px 17px 13px 2%;
@@ -1562,7 +1577,7 @@ a:hover {
   border-width: 0px 0px 0px 1px;
   width: 219px;
 }
-.footer_container #updates aside > a {
+#updates aside > a {
   background: url("images/icon-docs.png?1309564181") 0 4px no-repeat;
   padding-left: 26px;
   padding-top: 5px;
@@ -1570,56 +1585,56 @@ a:hover {
   margin-bottom: 5px;
   display: block;
 }
-.footer_container #updates aside > a + a {
+#updates aside > a + a {
   background: url("images/icon-download.png?1309564203") 0 4px no-repeat;
   margin-bottom: 0;
   margin-right: 0;
 }
-.footer_container #valueProps {
+#valueProps {
   margin-bottom: 50px;
 }
-.footer_container #valueProps p {
+#valueProps p {
   line-height: 21px;
   font-size: 1.38rem;
 }
-.footer_container #valueProps #grid {
+#valueProps #grid {
   background: url("images/icon-grid.png?1309581016") 0 0 no-repeat;
   padding-left: 38px;
   padding-top: 2px;
 }
-.footer_container #valueProps #ui {
+#valueProps #ui {
   background: url("images/icon-ui.png?1309581127") 0 0 no-repeat;
   padding-left: 38px;
   padding-top: 2px;
 }
-.footer_container #valueProps #mobile {
+#valueProps #mobile {
   background: url("images/icon-mobile.png?1309581151") 0 0 no-repeat;
   padding-left: 38px;
   padding-top: 2px;
 }
-.footer_container #logos {
+#logos {
   border-top: solid 1px #e6e6e6;
   border-bottom: solid 1px #e6e6e6;
   padding-top: 20px;
   padding-bottom: 10px;
   margin-bottom: 60px;
 }
-.footer_container #logos h4 {
+#logos h4 {
   color: #7b7b7b;
 }
-.footer_container #logos ul {
+#logos ul {
   margin-top: 20px;
 }
-.footer_container #logos ul li {
+#logos ul li {
   width: 25%;
   float: left;
   margin-right: 0;
   text-align: center;
 }
-.footer_container #logos ul li:last-child {
+#logos ul li:last-child {
   margin-right: 0;
 }
-.footer_container #logos ul li a {
+#logos ul li a {
   display: block;
   margin-bottom: 0;
   line-height: 1;
@@ -1667,9 +1682,6 @@ a:hover {
 .blog {
   padding-top: 10px;
 }
-.blog .post_links {
-  border-right: 1px solid #e8e8e8;
-}
 .blog .post_links h4 {
   color: #333;
   font-size: 40px;
@@ -1691,6 +1703,7 @@ a:hover {
 }
 .blog .post_list .frame {
   padding: 20px;
+  margin-bottom: 40px;
 }
 .blog .post_list h4 {
   font-size: 40px;
