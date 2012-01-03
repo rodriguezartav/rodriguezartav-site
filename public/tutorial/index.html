@@ -88,213 +88,23 @@
   </div>
 
 <div class="row blog">
-    <div class="two columns post_links">
-    <h4>Posts</h4>
-        
-                
-            
-                
-            
-                
-            
-                
-            
-                
-                  <div class="post_link">
-                      <a href="/tutorial/posts/front/foundation.html">Responsive Design with Foundation</a>
-                      <p>Css framework that adapts to desktop,tablet and mobile screens.</p>
-                    </div>
-                
-            
-                
-                  <div class="post_link">
-                      <a href="/tutorial/posts/front/static_blog.html">Static Blog in NodeJS</a>
-                      <p>Using Docpad to pre-compile Eco templates</p>
-                    </div>
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-  </div>
+ 
     
-  <div class="seven columns post_list">
+  <div class="nine columns post_list">
     <h4></h4>
     
 
+<ul class="block-grid three-up ">
 
-
-
-        
-
-
-        
-
-
-        
-
-
-        
 
 
     
-    <h4>Responsive Design with Foundation</h4>
-      
-  <div class="frame">
-  
-  <img src="/images/foundation_mobil.png"/>
-  
-  
-    <h5>Motivation</h5>
-    <p>We've all worked with Grid 960; at least thats how I got introduced into css frameworks. I am one that liked the idea since the get go and have evolved with it.</p>
-
-    <p>On the way I discovered Sass and liked the indentation and variables, then moved to compass so I could easily write css3. When started playing with NodeJS I moved to LESS; and these days Stylus is king of css.</p>
-
-    <p>CSS is great and is , in itself, a great framework all together. Normally us designers have our own base style sheet and reusable libraries; I find my self a good designer and know css like the palm of my hand, however I am sure there are far better designers than myself out there.</p>
-
-
-    <p>The search for better css code and more importantly a solution to designing for different screen sizes made me understand that "Responsive Design was the way to go"</p>
-
-    <img src="/images/foundation.png"/>
-
-    <h5>Zurb Foundation</h5>
-    <p>Zurb is one of those shops that excel at what they do, they are one of the best design agencies in the world; So their work is interesting to follow, especially when they create a framework for responsive design and Open Source it.</p>
-
-    <p>Introducing <a href="http://foundation.zurb.com/">Zurb Foundation</a>, an amazing css3/html5 framework for creating responsive designs that adapt to screen size by showing, hiding and modifying elements css according to current screen size.</p>
-
-    <p>Zurb Foundation also feature what other frameworks does, like buttons, alerts, tabs, grid and such. Its beautiful, but what I like the most is the intelligent and simple way they cater for mobil design; making it effortless to create an app that looks perfect on a 1200px screen and on a 320px as well.</p>
-    
-    
-    <h5>How to use it - Part I</h5>
-    <p>As with most open source frameworks, authors try to make it easy for new comers to get started with their library. Foundation is not the exception; <a href="http://foundation.zurb.com/files/foundation-download-2.1.4.zip">You can just download a base site</a>. However sometimes the real life scenarios where we deploy such libraries is different from what authors imagined.</p>
-    
-    <p>I hardly us Rails for Front-End components, however <a href="https://github.com/zurb/foundation-rails">Rails-Foundation</a> makes it as simple as it can be to integrate Foundation into a Rails App. For me, this is not fully beneficial yet. </p>
-    
-    <p>The problem with doing things custom for a project is that you can not take advantage of the auto-pilots in most modern frameworks like rails; However it does give you the control and separation of concerns necessary to create innovative and maintainable projects.</p>
-    
-    <h5>How to use it - Part II</h5>
-    <p><a href="#">First I ported Zurb Foundation into Stylus</a> and made sure all of its libraries work properly; I had to get rid of a IE Gradient Filter since it was not compiling.</p>
-    
-    <p>Then I managed to integrate Zurb Foundation into SpineJS for creating Async UI's , which also works as well with <a href="">Docpad</a> which is how this site was created in less than 15 hours start to finish.</p>
-    
-    <p>All you have to do is drop the Foundation port to stylus into the css folder and import the required Foundation Plugins in the index.styl file. Then you can start creating amazing layouts with such simplicity that you will be amazed at what happends when you shrink the browser screen or preview on a tablet.</p>
-    <div class="row">
-    <img align="left" style="margin-right: 8px" src="/images/foundation_index.png"/>
-    
-    <img align="left" src="/images/foundation_css.png"/>
-    </div>
-    <h5>Tips</h5>
-    <p>The best way to learn is by looking at Zurbs work, especially the marketing site, start by cloning this work which is why they share it on their repository.</p>
-
-    <p>Plan you design ahead, when working with Zurb Foundation is a little different than Sass; Not as many mixings necessary, since layout is controller by markup. Example class="columns six" will take care of position and sizing.</p>
-
-    <p>Follow this sheet sheet of classes so that its easier to code using your favorite templating engine. </p>
-
-    <h5>Links</h5>
-    <a href="">Zurb Foundation Docs</a>
-    <a href="">Zurb Foundation Github</a>
-    <a href="">Zurb Foundation Port to Stylus</a>
-    <a href="">Zurb Foundation + Spine Boilerplate ( nodeJS )</a>
-    <a href="">Zurb Foundation + Spine + Docpad Template ( nodeJS )</a>
-
-  </div>
-      
-
-
-    
-    <h4>Static Blog in NodeJS</h4>
-      
-  <div class="frame">
-    <h5>Background</h5>
-    <p>First we used to build html web sites with Adobe's Dreamweaver, using templates to be follow DRY principles. Next we moved toward CMS like Drupal , Wordpress.</p>
-    <p>We got accostumbed to working with dynamic database driven sites, however most of the time those sites remain static for a long period of time. The reason we kept using such patters for blogs and sites was because of how complicated it used to be to edit html, ftp changes , etc.</p>
-    
-    
-    <h5>Trend</h5>
-    <p>With Rails and Sinatra many of us started using templates and libraries like Jekill to generate database-free static web sites that we could quickly create and update in our favorite template engine/language.</p>
-    
-    <p>Still Rails seemed like an overkill for my personal web site, consisting of a couple of pages, I also wanted to try and build a simple static blog with NodeJS</p>
-
-    <img src="images/docpad_folder.png"/>
-
-  <h5>Docpad</h5>
-  <p>I was thinking that it was far better to compile the html for my static site locally, rather than using a templating engine like Jade. Even thou it was important to avoid copy&pasting my headers and footers all over the place; It was worst ( for me ) to start tweeking my NodeJS server that I got set up for my Async UI's.</p>
-  
-   <p>So I started the usual Google research dance , looking specifically for a Jekyll version for NodeJS. Found Docpad, which was exactly what I was looking for and it turned out to have pretty powerful features that I didn't foresee</p>
-   
-   <p>As an example, Docpad has a way to do in-context Editing, but in may case a way to read meta data from files in folder was much more interesting so that I could keep my blog posts separated and list them "dynamically".</p>
-
-   <script src="https://gist.github.com/1541668.js"> </script>
-
-  <h5>Getting Started</h5>
-    <p>The first thing is to head to <a href="https://github.com/balupton/docpad">Doc Pad @ Github</a> and install it using NPM.<p>
-    
-    <p>I think the instructions are very clear , the installation and services are almost stable.<small> ( sometimes take too long to finish )</small> So that anybody can get started right away</p>
-    
-    <p>In order to use my prefered enviroment you should install Spine App and Hem. npm install -g Spine.App Hem<p>
-  
-    <h5>A better environment</h5>
-    <p>We all have our own preferences, I work plenty with Async UI's and start all node projects with Spine App. This also sets up Stylus and such. I also migrated Foundation Framework to Stylus and made it fit perfectly with Spine.</p>
-
-    <p>Spine got Hem a development server that takes care of Stylus and Coffeescript, and Docpad has its own server however it doesn't have Common JS Modules or the css concatenation of a power-horse like Spine and Hem.</p>
-
-    <p>So I use both, inside of Spine public Directory ( NodeJS Express Static Server  ) I created the basic Docpad app , then created a terminal script to Compile the Docpad part and copied from the Docpad Output directoru (/public/out) to the public directory(/public) which takes care of all the URL usage in Docpad</p>
-
-    <h5>Step by Step</h5>
-    <p>Create new Spine App: <q>spine app blog</q> which will create a folder named blog and inside it another one named public. The rest is out of scope.</p>
-    <p>Next go ahead scaffolding Docpad simplest App into the /public folder. <q>git clone git://github.com/balupton/canvas.docpad.git</q> </p>
-    
-    <p>Inside the canvas.docpad folder , copy the /src and /out folders into the /public folder.Erase /public/canvas.docpad</p>
-
-    <p>Docpad compiles the content of /src into /out. I am sure there are far better ways of making docpad deploy to the /public folder or using Guard or Watch to move  /public/out/* into /public ; however for me the simplest and quicker way turn out to be a script</p>
-    <script src="https://gist.github.com/1541753.js"> </script>
-    
-    <p>In the project root type hem server, and every time you make a change to anything inside the public/src run the script. Docpad also comes with an automatic compiler, but is far to slow for my taste; I run faster by cmd-tab and two terminal windows.</p>
-    
-
-    <h5>How the Case Studies and Blog work?</h5>
-    <p>HA! this is the tricky part and what I liked the most. So using the snippet I provided back there, you can list all files in a path. ej: inside the for loop check out >>>> if document.url.indexOf('/blog/posts') == 0 </p>
-    
-    <p>This way I can also use my own meta data for example document.sub_title or the Docpad's API like title, content, url, etc</p>
-
-    <p>In this site I use two flavors, the Case Studies and the Blog. Case studies are straight-forwared. A folder named Enterprise with several files including and index.html.eco; I also use a enterprise layout that does the trick for all files and sets them on the side bar as links. That's pretty much it, I did it with 4 case studies and ended up with 4 micro-sites very quickly.</p>
-
-    <p>The blog section is a litter more trickier, because it needs an index page to show the features posts. In order for this to work given the Layout Inheritance I made so that each post inside /blog/posts delegates its title to the blog layout, but the index (featured posts  )  does show each title and content for all files inside the path /blog/posts/front.</p>
-
-    <p>Now its so simple to right posts and control where they appear, just like I am doing with this posts.</p>
-    
-    <h5>Deploy</h5>
-    <p>Well first commit the code to Git: <a href="https://github.com/rodriguezartav/rodriguezartav-site">Web Site Code</a></p>
-    
-    <p>Then do a heroku create rodriguezartav --stack cedar </p>
-    
-    <p>And git push heroku origin</p>
-    
-    <p>The web site is on http://rodriguezartav.herokuapp.com</p>
-    
-    
-      </p>
-
-
-   </div>  
-
+    <li>
+      <div class="panel">
+      <h5><a href="/tutorial/posts/front/static_blog.html">Static Blog in NodeJS</a></h5>
+        Using Docpad to pre-compile Eco templates
+        </div>
+      </li>
       
 
 
@@ -316,7 +126,14 @@
         
 
 
-        
+    
+    <li>
+      <div class="panel">
+      <h5><a href="/tutorial/posts/front/foundation.html">Responsive Design with Foundation</a></h5>
+        Css framework that adapts to desktop,tablet and mobile screens.
+        </div>
+      </li>
+      
 
 
         
@@ -324,8 +141,7 @@
 
         
 
-
-        
+</ul>
 
     
     
@@ -349,17 +165,15 @@
   </div>
   
       <div class="three columns">
-  
-    
           <div class="panel hide-on-phones">
               <h4>Follow Me</h4>
               <p>I post regularly to this blog and twitter.</p>
               <p>
-        <a href="https://twitter.com/rodriguezartav"  data-size="large"  class="button nice twitter-follow-button" data-show-count="false" data-lang="en">Follow me</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>   
-              </p>
+        <a href="https://twitter.com/rodriguezartav" data-size="large" class="button nice twitter-follow-button" data-show-count="false" data-lang="en">Follow me</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>              </p>
           </div>
 
+    
      
 
           

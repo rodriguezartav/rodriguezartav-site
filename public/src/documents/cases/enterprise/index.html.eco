@@ -2,11 +2,9 @@
 title: 'Enterprise Systems'
 sub_title: "Using the latest open source technology to solve complex business scenarios."
 link_title: "Getting Started"
-layout: 'enterprise'
-tags: ['greeting','french']
+layout: 'case'
 ---
 
-	<div class="six columns">
 		<h3>Rodco and the Sixth Framework</h3>
 		<h4 class="subheader">A success story of a Market leader using "Sixth"</h4>
 		
@@ -64,7 +62,3 @@ tags: ['greeting','french']
     
 		<p>The code , organized , tested and object oriented is stored in separated repositories; Also in the cloud allowing distributed teams to work on the same projects with out conflicts with 100% reliability.</p>
 
-    
-		<hr />
-		
-	</div>

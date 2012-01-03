@@ -3,11 +3,17 @@ title: "Open Source Tutorials"
 layout: 'tutorial'
 ---
 <% docs =  @documents.reverse() %>
+<ul class="block-grid three-up ">
 
 <% for document in docs: %>
 <% url = document.url %>
 	<% if url.indexOf('/tutorial/posts/front') == 0 : %>
-    <h4><%= document.post_title %></h4>
-	  <%- document.content %>
+    <li>
+      <div class="panel">
+      <h5><a href="<%= document.url %>"><%= document.post_title %></a></h5>
+	    <%- document.description %>
+	    </div>
+	  </li>
   <% end %>	
 <% end %>
+</ul>

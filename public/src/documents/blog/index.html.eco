@@ -2,11 +2,19 @@
 title: "Open Source News"
 layout: 'blog'
 ---
+
 <% docs =  @documents.reverse() %>
+<ul class="block-grid three-up ">
 
 <% for document in docs: %>
-	<% if document.url.indexOf('/blog/posts/front') == 0: %>
-    <h4><%= document.post_title %></h4>
-	  <%- document.content %>
+<% url = document.url %>
+	<% if url.indexOf('/blog/posts/front') == 0 : %>
+    <li>
+      <div class="panel">
+      <h5><a href="<%= document.url %>"><%= document.post_title %></a></h5>
+	    <%- document.description %>
+	    </div>
+	  </li>
   <% end %>	
 <% end %>
+</ul>

@@ -21,19 +21,9 @@ title: 'Blog'
   </div>
 
 <div class="row blog">
-	<div class="two columns post_links">
-    <h4>Posts</h4>
-    	<% for document in @documents: %>
-				<% if document.url.indexOf('/blog/posts') == 0: %>
-				  <div class="post_link">
-					  <a href="<%= document.url %>"><%= document.post_title %></a>
-					  <p><%= document.description %></p>
-					</div>
-				<% end %>
-			<% end %>
-  </div>
+
     
-  <div class="seven columns post_list">
+  <div class="nine columns post_list">
     <h4><%= @document.post_title %></h4>
     <%- @content %>
     <div id="disqus_thread"></div>

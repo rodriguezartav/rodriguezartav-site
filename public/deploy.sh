@@ -1,2 +1,2 @@
 docpad generate
-cp -R out/ ./
+cp -Rf out/ ./
